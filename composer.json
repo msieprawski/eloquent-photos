@@ -1,0 +1,18 @@
+{
+    "name": "msieprawski/eloquent-photos",
+    "description": "Photos for Laravel models",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateusz Sieprawski",
+            "email": "crom9153@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Msieprawski\\EloquentPhotos\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}

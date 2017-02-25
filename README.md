@@ -15,7 +15,7 @@ Currently this package has been tested and developed for Laravel 5.3 or greater.
     `protected $targetPhotosDirectory = 'users';`
     
 ## Usage
-1. Add photos to your model
+### Add photos to your model
 ```php
 <?php namespace App;
 $user = User::find(1);
@@ -25,7 +25,8 @@ $user->addPhotos([
     '/path/to/your/photo2.jpg',
 ]);
 ```
-2. Add uploaded photos to your model
+
+### Add uploaded photos to your model
 ```php
 <?php namespace App;
 
@@ -34,7 +35,8 @@ $user = User::find(1);
 $user->addPhoto($photos);
 ```
 It will automatically upload the photos and store it against user entity.
-3. Get photos
+
+### Get photos
 ```php
 <?php namespace App;
 $user = User::find(1);
@@ -44,7 +46,8 @@ foreach ($photos as $photo) {
     echo $photo->photo_path;
 }
 ```
-4. Delete photos
+
+### Delete photos
 ```php
 <?php namespace App;
 $user = User::find(1);

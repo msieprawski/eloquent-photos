@@ -13,6 +13,6 @@
             "Msieprawski\\EloquentPhotos\\": "src/"
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {}
 }

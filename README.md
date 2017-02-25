@@ -9,9 +9,11 @@ Currently this package has been tested and developed for Laravel 5.3 or greater.
 1. `composer require msieprawski/eloquent-photos`
 2. Add package service provider in your `config/app.php` file:
     `Msieprawski\EloquentPhotos\EloquentPhotosServiceProvider::class,`
-3. Add HasPhotos trait to your model:
+3. Publish migrations and run `php artisan migrate`:
+    `php artisan vendor:publish --tag=migrations`
+4. Add HasPhotos trait to your model:
     `use Msieprawski\EloquentPhotos\HasPhotos`
-4. Add protected property to your model with directory name where photos should be stored:
+5. Add protected property to your model with directory name where photos should be stored:
     `protected $targetPhotosDirectory = 'users';`
     
 ## Usage
